@@ -3,19 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>জরুরি সেবা ডিরেক্টরী</title>
+    <title>জরুরি সেবা ডিরেক্টরি</title>
     <link rel="shortcut icon" href="./assets/logo.ico" type="image/x-icon" />
 
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS and daisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <!-- DaisyUI CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/daisyui@5"></script>
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
 
     <!-- Vanilla CSS -->
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body class="bg-[var(--color-background)]">
-    <div class="bg-white">বাংলা</div>
+    <!-- nav bar -->
+    <nav>
+      <!-- nav bar left side -->
+      <div>
+        <img src="./assets/logo.png" alt="logo" />
+        <p>Emergency Service</p>
+      </div>
+      <!-- nav bar right side -->
+      <div>
+        <div><span>0</span><img src="./assets/heart.png" alt="heart icon" /></div>
+        <div><span>100</span><img src="./assets/coin.png" alt="coin icon" /></div>
+        <div><span>0</span> Copy</div>
+      </div>
+    </nav>
+    <!-- Hero section -->
+    <section>
+      <img src="./assets/logo-dark.png" alt="logo" />
+      <p>জরুরি সেবা ডিরেক্টরি</p>
+      <p>
+        Government Emergency Services at Your Fingertip – A Project by Government of the People’s
+        Republic of Bangladesh
+      </p>
+    </section>
+    <!-- Main Section -->
+    <main>
+      <!-- Cards Section -->
+      <section>
+        <div>
+          <div><span>🚨</span><i class="fa-regular fa-heart"></i></div>
+          <p>জাতীয় জরুরি সেবা</p>
+          <p>National Emergency</p>
+          <p>999</p>
+          <p>সার্বজনীন</p>
+          <div>
+            <button class="p-1 h-7 btn btn-soft bg-white">
+              <i class="fa-regular fa-copy"></i> Copy
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
