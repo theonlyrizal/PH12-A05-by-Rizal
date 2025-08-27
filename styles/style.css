@@ -1,6 +1,16 @@
+
 :root {
   --color-accent: #00a63e;
-  --color-background: #f5fff6;
+  --color-background-1: #eefff0;
+  --color-background-2: #e6ffe9;
   --color-gradside: #013223;
   --color-gradmid: #006747;
+  --color-alert: #FFE3E2;
+  --color-police: #DFEFFF;
+  --text-light:#727272;
+  --font-sans-bn: 'Noto Sans Bengali';
+}
+
+.sans-bn-font{
+  font-family: var(--font-sans-bn);
 }
