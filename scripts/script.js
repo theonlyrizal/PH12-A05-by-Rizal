@@ -25,6 +25,13 @@ document.getElementById('cards-parent').addEventListener('click', function (even
     case 'card-7-call-button':
     case 'card-8-call-button':
     case 'card-9-call-button':
+      let coinCountElement = document.getElementById('coin-count');
+      let numberOfCoin = Number(coinCountElement.innerText);
+      if (numberOfCoin < 20) {
+        alert(`⚠️ At lease 20 coins required to place a Call. Try again Later.`);
+        break;
+      }
+      const callHistoryContainerElement = document.getElementById('call-history-container');
       const buttonGrandParent = clickedElement.parentNode.parentNode;
       const cardServiceName = document.getElementById(
         buttonGrandParent.id + '-service-name'
@@ -32,7 +39,11 @@ document.getElementById('cards-parent').addEventListener('click', function (even
       const cardServiceNumber = document.getElementById(
         buttonGrandParent.id + '-service-number'
       ).innerText;
-      alert(`Calling ${cardServiceName}, Number: ${cardServiceNumber}...`);
+      alert(
+        `📞 Calling ${cardServiceName}, Number: ${cardServiceNumber} ... \n🪙 20 Coins will be deducted`
+      );
+      numberOfCoin -= 20;
+      coinCountElement.innerText = numberOfCoin;
       break;
   }
 });
