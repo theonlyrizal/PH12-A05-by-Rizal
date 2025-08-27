@@ -25,11 +25,14 @@ document.getElementById('cards-parent').addEventListener('click', function (even
     case 'card-7-call-button':
     case 'card-8-call-button':
     case 'card-9-call-button':
-      const buttonParent = clickedElement.parentNode;
-      const cardServiceName = document.getElementById(buttonParent.id + '-service-name').innerText;
+      const buttonGrandParent = clickedElement.parentNode.parentNode;
+      const cardServiceName = document.getElementById(
+        buttonGrandParent.id + '-service-name'
+      ).innerText;
       const cardServiceNumber = document.getElementById(
-        buttonParent.id + '-service-number'
+        buttonGrandParent.id + '-service-number'
       ).innerText;
       alert(`Calling ${cardServiceName}, Number: ${cardServiceNumber}...`);
+      break;
   }
 });
