@@ -1,6 +1,7 @@
-document.getElementById('cards-parent').addEventListener('click', function (event) {
+document.getElementById('body-main').addEventListener('click', function (event) {
   const clickedElement = event.target;
 
+  // Heart Click Mechanism
   switch (clickedElement.id) {
     case 'card-1-heart':
     case 'card-2-heart':
@@ -16,6 +17,7 @@ document.getElementById('cards-parent').addEventListener('click', function (even
       numberOfHeart++;
       heartCountElement.innerText = numberOfHeart;
       break;
+    // Call Button Mechanism
     case 'card-1-call-button':
     case 'card-2-call-button':
     case 'card-3-call-button':
@@ -44,6 +46,32 @@ document.getElementById('cards-parent').addEventListener('click', function (even
       );
       numberOfCoin -= 20;
       coinCountElement.innerText = numberOfCoin;
+      const childToAppend = createCallHistoryChild(cardServiceName, cardServiceNumber);
+      callHistoryContainerElement.appendChild(childToAppend);
       break;
+    case 'history-clear-button':
+      const elementToClear = document.getElementById('call-history-container');
+      elementToClear.innerHTML = '';
   }
 });
+
+// Functio to create call history child
+function createCallHistoryChild(serviceName, serviceNumber) {
+  const layer1Element1 = document.createElement('p');
+  layer1Element1.innerText = serviceName;
+  const layer1Element2 = document.createElement('p');
+  layer1Element2.innerText = serviceNumber;
+  layer1Element2.className = 'text-[var(--text-light)]';
+
+  const layer2Element1 = document.createElement('div');
+  layer2Element1.append(layer1Element1, layer1Element2);
+  const layer2Element2 = document.createElement('p');
+  layer2Element2.innerText = new Date().toLocaleTimeString();
+
+  const layer3Element1 = document.createElement('div');
+  layer3Element1.className =
+    'bg-gray-50 p-4 flex justify-between items-center w-full mb-2 rounded-lg sm:bg-gray-50 sm:p-4 sm:flex sm:justify-between sm:items-center sm:w-full sm:mb-2 sm:rounded-lg';
+  layer3Element1.append(layer2Element1, layer2Element2);
+
+  return layer3Element1;
+}
