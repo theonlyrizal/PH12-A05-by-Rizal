@@ -41,13 +41,13 @@ document.getElementById('body-main').addEventListener('click', function (event) 
       const cardServiceNumber = document.getElementById(
         buttonGrandParent.id + '-service-number'
       ).innerText;
-      alert(
-        `📞 Calling ${cardServiceName}, Number: ${cardServiceNumber} ... \n🪙 20 Coins will be deducted`
-      );
       numberOfCoin -= 20;
       coinCountElement.innerText = numberOfCoin;
       const childToAppend = createCallHistoryChild(cardServiceName, cardServiceNumber);
       callHistoryContainerElement.appendChild(childToAppend);
+      alert(
+        `📞 Calling ${cardServiceName}, Number: ${cardServiceNumber} ... \n🪙 20 Coins will be deducted`
+      );
       break;
     case 'history-clear-button':
       const elementToClear = document.getElementById('call-history-container');
@@ -55,7 +55,7 @@ document.getElementById('body-main').addEventListener('click', function (event) 
   }
 });
 
-// Functio to create call history child
+// Function to create call history child
 function createCallHistoryChild(serviceName, serviceNumber) {
   const layer1Element1 = document.createElement('p');
   layer1Element1.innerText = serviceName;
