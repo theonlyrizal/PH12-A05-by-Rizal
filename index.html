@@ -84,10 +84,14 @@
       class="flex justify-between gap-8 py-[3%] px-[3%] sm:flex sm:justify-between sm:gap-8 sm:py-[3%] sm:px-[3%]"
     >
       <!-- Cards Section -->
-      <section class="grid grid-cols-3 w-[75%] gap-8 sm:grid sm:grid-cols-3 sm:w-[75%] sm:gap-8">
+      <section
+        id="cards-parent"
+        class="grid grid-cols-3 w-[75%] gap-8 sm:grid sm:grid-cols-3 sm:w-[75%] sm:gap-8"
+      >
         <!-- each card -->
         <!-- 1 -->
         <div
+          id="card-1"
           class="bg-white flex flex-col w-full p-8 rounded-lg shadow-md sm:bg-white sm:flex sm:flex-col sm:w-full sm:p-8 sm:rounded-lg sm:shadow-md"
         >
           <div class="flex justify-between items-center sm:flex sm:justify-between sm:items-center">
@@ -95,13 +99,25 @@
               class="bg-[var(--color-alert)] h-[4rem] p-4 rounded-2xl sm:bg-[var(--color-alert)] sm:h-[4rem] sm:p-4 sm:rounded-2xl"
               src="./assets/emergency.png"
               alt=""
-            /><i class="fa-regular fa-heart fa-lg" style="color: var(--text-light)"></i>
+            /><i
+              id="card-1-heart"
+              class="fa-regular fa-heart fa-lg hover:cursor-pointer"
+              style="color: var(--text-light)"
+            ></i>
           </div>
-          <p class="text-[1.5rem] font-bold my-4 sm:text-[1.5rem] sm:font-bold sm:my-4">
+          <p
+            id="card-1-service-name"
+            class="text-[1.5rem] font-bold my-4 sm:text-[1.5rem] sm:font-bold sm:my-4"
+          >
             জাতীয় জরুরি সেবা
           </p>
           <p class="text-[var(--text-light)]">National Emergency</p>
-          <p class="text-[2rem] font-bold my-2 sm:text-[2rem] sm:font-bold sm:my-2">999</p>
+          <p
+            id="card-1-service-number"
+            class="text-[2rem] font-bold my-2 sm:text-[2rem] sm:font-bold sm:my-2"
+          >
+            999
+          </p>
           <p
             class="self-start inline-block bg-[#f5f5f5] text-[var(--text-light)] px-4 py-2 rounded-[2rem] sm:self-start sm:inline-block sm:bg-[#f5f5f5] sm:px-4 sm:py-2 sm:rounded-[2rem]"
           >
@@ -111,12 +127,14 @@
             class="flex justify-between items-center w-full mt-5 sm:flex sm:justify-between sm:items-center sm:w-full sm:mt-5"
           >
             <button
+              id="card-1-copy-button"
               class="btn btn-soft rounded-xl bg-white w-[48%] flex justify-center items-center text-[var(--text-light)] hover:bg-gray-200 hover:text-gray-800 sm:btn sm:btn-soft sm:rounded-xl sm:bg-white sm:w-[48%] sm:flex sm:justify-center sm:items-center"
             >
               <i class="fa-regular fa-copy" style="color: var(--text-light)"></i>
               <span class="text-[1.2rem] sm:text-[1.2rem]">Copy</span>
             </button>
             <button
+              id="card-1-call-button"
               class="btn btn-active btn-success rounded-xl bg-[var(--color-accent)] text-white w-[48%] hover:bg-green-700 sm:btn sm:btn-active sm:btn-success sm:rounded-xl sm:bg-[var(--color-accent)] sm:text-white sm:w-[48%] sm:hover:bg-green-700"
             >
               <i class="fa fa-phone" style="color: #ededed"></i>
@@ -126,6 +144,7 @@
         </div>
         <!-- 2 -->
         <div
+          id="card-2"
           class="bg-white flex flex-col w-full p-8 rounded-lg shadow-md sm:bg-white sm:flex sm:flex-col sm:w-full sm:p-8 sm:rounded-lg sm:shadow-md"
         >
           <div class="flex justify-between items-center sm:flex sm:justify-between sm:items-center">
@@ -133,11 +152,25 @@
               class="bg-[var(--color-police)] h-[4rem] p-4 rounded-2xl sm:bg-[var(--color-police)] sm:h-[4rem] sm:p-4 sm:rounded-2xl"
               src="./assets/police.png"
               alt=""
-            /><i class="fa-regular fa-heart fa-lg" style="color: var(--text-light)"></i>
+            /><i
+              id="card-2-heart"
+              class="fa-regular fa-heart fa-lg hover:cursor-pointer"
+              style="color: var(--text-light)"
+            ></i>
           </div>
-          <p class="text-[1.5rem] font-bold my-4 sm:text-[1.5rem] sm:font-bold sm:my-4">পুলিশ</p>
+          <p
+            id="card-2-service-name"
+            class="text-[1.5rem] font-bold my-4 sm:text-[1.5rem] sm:font-bold sm:my-4"
+          >
+            পুলিশ
+          </p>
           <p class="text-[var(--text-light)]">Police</p>
-          <p class="text-[2rem] font-bold my-2 sm:text-[2rem] sm:font-bold sm:my-2">999</p>
+          <p
+            id="card-2-service-number"
+            class="text-[2rem] font-bold my-2 sm:text-[2rem] sm:font-bold sm:my-2"
+          >
+            999
+          </p>
           <p
             class="self-start inline-block bg-[#f5f5f5] text-[var(--text-light)] px-4 py-2 rounded-[2rem] sm:self-start sm:inline-block sm:bg-[#f5f5f5] sm:px-4 sm:py-2 sm:rounded-[2rem]"
           >
@@ -147,12 +180,14 @@
             class="flex justify-between items-center w-full mt-5 sm:flex sm:justify-between sm:items-center sm:w-full sm:mt-5"
           >
             <button
+              id="card-2-copy-button"
               class="btn btn-soft rounded-xl bg-white w-[48%] flex justify-center items-center text-[var(--text-light)] hover:bg-gray-200 hover:text-gray-800 sm:btn sm:btn-soft sm:rounded-xl sm:bg-white sm:w-[48%] sm:flex sm:justify-center sm:items-center"
             >
               <i class="fa-regular fa-copy" style="color: var(--text-light)"></i>
               <span class="text-[1.2rem] sm:text-[1.2rem]">Copy</span>
             </button>
             <button
+              id="card-2-call-button"
               class="btn btn-active btn-success rounded-xl bg-[var(--color-accent)] text-white w-[48%] hover:bg-green-700 sm:btn sm:btn-active sm:btn-success sm:rounded-xl sm:bg-[var(--color-accent)] sm:text-white sm:w-[48%] sm:hover:bg-green-700"
             >
               <i class="fa fa-phone" style="color: #ededed"></i>
@@ -162,6 +197,7 @@
         </div>
         <!-- 3 -->
         <div
+          id="card-3"
           class="bg-white flex flex-col w-full p-8 rounded-lg shadow-md sm:bg-white sm:flex sm:flex-col sm:w-full sm:p-8 sm:rounded-lg sm:shadow-md"
         >
           <div class="flex justify-between items-center sm:flex sm:justify-between sm:items-center">
@@ -169,13 +205,25 @@
               class="bg-[var(--color-alert)] h-[4rem] p-4 rounded-2xl sm:bg-[var(--color-alert)] sm:h-[4rem] sm:p-4 sm:rounded-2xl"
               src="./assets/fire-service.png "
               alt=""
-            /><i class="fa-regular fa-heart fa-lg" style="color: var(--text-light)"></i>
+            /><i
+              id="card-3-heart"
+              class="fa-regular fa-heart fa-lg hover:cursor-pointer"
+              style="color: var(--text-light)"
+            ></i>
           </div>
-          <p class="text-[1.5rem] font-bold my-4 sm:text-[1.5rem] sm:font-bold sm:my-4">
+          <p
+            id="card-3 -service-name"
+            class="text-[1.5rem] font-bold my-4 sm:text-[1.5rem] sm:font-bold sm:my-4"
+          >
             ফায়ার সার্ভিস
           </p>
           <p class="text-[var(--text-light)]">Fire Service</p>
-          <p class="text-[2rem] font-bold my-2 sm:text-[2rem] sm:font-bold sm:my-2">999</p>
+          <p
+            id="card-3-service-number"
+            class="text-[2rem] font-bold my-2 sm:text-[2rem] sm:font-bold sm:my-2"
+          >
+            999
+          </p>
           <p
             class="self-start inline-block bg-[#f5f5f5] text-[var(--text-light)] px-4 py-2 rounded-[2rem] sm:self-start sm:inline-block sm:bg-[#f5f5f5] sm:px-4 sm:py-2 sm:rounded-[2rem]"
           >
@@ -185,12 +233,14 @@
             class="flex justify-between items-center w-full mt-5 sm:flex sm:justify-between sm:items-center sm:w-full sm:mt-5"
           >
             <button
+              id="card-3-copy-button"
               class="btn btn-soft rounded-xl bg-white w-[48%] flex justify-center items-center text-[var(--text-light)] hover:bg-gray-200 hover:text-gray-800 sm:btn sm:btn-soft sm:rounded-xl sm:bg-white sm:w-[48%] sm:flex sm:justify-center sm:items-center"
             >
               <i class="fa-regular fa-copy" style="color: var(--text-light)"></i>
               <span class="text-[1.2rem] sm:text-[1.2rem]">Copy</span>
             </button>
             <button
+              id="card-3-call-button"
               class="btn btn-active btn-success rounded-xl bg-[var(--color-accent)] text-white w-[48%] hover:bg-green-700 sm:btn sm:btn-active sm:btn-success sm:rounded-xl sm:bg-[var(--color-accent)] sm:text-white sm:w-[48%] sm:hover:bg-green-700"
             >
               <i class="fa fa-phone" style="color: #ededed"></i>
@@ -200,6 +250,7 @@
         </div>
         <!-- 4 -->
         <div
+          id="card-4"
           class="bg-white flex flex-col w-full p-8 rounded-lg shadow-md sm:bg-white sm:flex sm:flex-col sm:w-full sm:p-8 sm:rounded-lg sm:shadow-md"
         >
           <div class="flex justify-between items-center sm:flex sm:justify-between sm:items-center">
@@ -207,13 +258,25 @@
               class="bg-[var(--color-alert)] h-[4rem] p-4 rounded-2xl sm:bg-[var(--color-alert)] sm:h-[4rem] sm:p-4 sm:rounded-2xl"
               src="./assets/ambulance.png"
               alt=""
-            /><i class="fa-regular fa-heart fa-lg" style="color: var(--text-light)"></i>
+            /><i
+              id="card-4-heart"
+              class="fa-regular fa-heart fa-lg hover:cursor-pointer"
+              style="color: var(--text-light)"
+            ></i>
           </div>
-          <p class="text-[1.5rem] font-bold my-4 sm:text-[1.5rem] sm:font-bold sm:my-4">
+          <p
+            id="card-4-service-name"
+            class="text-[1.5rem] font-bold my-4 sm:text-[1.5rem] sm:font-bold sm:my-4"
+          >
             অ্যাম্বুলেন্স
           </p>
           <p class="text-[var(--text-light)]">Ambulance</p>
-          <p class="text-[2rem] font-bold my-2 sm:text-[2rem] sm:font-bold sm:my-2">1994-999999</p>
+          <p
+            id="card-4-service-number"
+            class="text-[2rem] font-bold my-2 sm:text-[2rem] sm:font-bold sm:my-2"
+          >
+            1994-999999
+          </p>
           <p
             class="self-start inline-block bg-[#f5f5f5] text-[var(--text-light)] px-4 py-2 rounded-[2rem] sm:self-start sm:inline-block sm:bg-[#f5f5f5] sm:px-4 sm:py-2 sm:rounded-[2rem]"
           >
@@ -223,12 +286,14 @@
             class="flex justify-between items-center w-full mt-5 sm:flex sm:justify-between sm:items-center sm:w-full sm:mt-5"
           >
             <button
+              id="card-4-copy-button"
               class="btn btn-soft rounded-xl bg-white w-[48%] flex justify-center items-center text-[var(--text-light)] hover:bg-gray-200 hover:text-gray-800 sm:btn sm:btn-soft sm:rounded-xl sm:bg-white sm:w-[48%] sm:flex sm:justify-center sm:items-center"
             >
               <i class="fa-regular fa-copy" style="color: var(--text-light)"></i>
               <span class="text-[1.2rem] sm:text-[1.2rem]">Copy</span>
             </button>
             <button
+              id="card-4-call-button"
               class="btn btn-active btn-success rounded-xl bg-[var(--color-accent)] text-white w-[48%] hover:bg-green-700 sm:btn sm:btn-active sm:btn-success sm:rounded-xl sm:bg-[var(--color-accent)] sm:text-white sm:w-[48%] sm:hover:bg-green-700"
             >
               <i class="fa fa-phone" style="color: #ededed"></i>
@@ -238,6 +303,7 @@
         </div>
         <!-- 5 -->
         <div
+          id="card-5"
           class="bg-white flex flex-col w-full p-8 rounded-lg shadow-md sm:bg-white sm:flex sm:flex-col sm:w-full sm:p-8 sm:rounded-lg sm:shadow-md"
         >
           <div class="flex justify-between items-center sm:flex sm:justify-between sm:items-center">
@@ -245,13 +311,25 @@
               class="bg-[var(--color-alert)] h-[4rem] p-4 rounded-2xl sm:bg-[var(--color-alert)] sm:h-[4rem] sm:p-4 sm:rounded-2xl"
               src="./assets/emergency.png"
               alt=""
-            /><i class="fa-regular fa-heart fa-lg" style="color: var(--text-light)"></i>
+            /><i
+              id="card-5-heart"
+              class="fa-regular fa-heart fa-lg hover:cursor-pointer"
+              style="color: var(--text-light)"
+            ></i>
           </div>
-          <p class="text-[1.5rem] font-bold my-4 sm:text-[1.5rem] sm:font-bold sm:my-4">
+          <p
+            id="card-5-service-name"
+            class="text-[1.5rem] font-bold my-4 sm:text-[1.5rem] sm:font-bold sm:my-4"
+          >
             নারী ও শিশু সহায়তা
           </p>
           <p class="text-[var(--text-light)]">Women & Child Helpline</p>
-          <p class="text-[2rem] font-bold my-2 sm:text-[2rem] sm:font-bold sm:my-2">109</p>
+          <p
+            id="card-5-service-number"
+            class="text-[2rem] font-bold my-2 sm:text-[2rem] sm:font-bold sm:my-2"
+          >
+            109
+          </p>
           <p
             class="self-start inline-block bg-[#f5f5f5] text-[var(--text-light)] px-4 py-2 rounded-[2rem] sm:self-start sm:inline-block sm:bg-[#f5f5f5] sm:px-4 sm:py-2 sm:rounded-[2rem]"
           >
@@ -261,12 +339,14 @@
             class="flex justify-between items-center w-full mt-5 sm:flex sm:justify-between sm:items-center sm:w-full sm:mt-5"
           >
             <button
+              id="card-5-copy-button"
               class="btn btn-soft rounded-xl bg-white w-[48%] flex justify-center items-center text-[var(--text-light)] hover:bg-gray-200 hover:text-gray-800 sm:btn sm:btn-soft sm:rounded-xl sm:bg-white sm:w-[48%] sm:flex sm:justify-center sm:items-center"
             >
               <i class="fa-regular fa-copy" style="color: var(--text-light)"></i>
               <span class="text-[1.2rem] sm:text-[1.2rem]">Copy</span>
             </button>
             <button
+              id="card-5-call-button"
               class="btn btn-active btn-success rounded-xl bg-[var(--color-accent)] text-white w-[48%] hover:bg-green-700 sm:btn sm:btn-active sm:btn-success sm:rounded-xl sm:bg-[var(--color-accent)] sm:text-white sm:w-[48%] sm:hover:bg-green-700"
             >
               <i class="fa fa-phone" style="color: #ededed"></i>
@@ -276,6 +356,7 @@
         </div>
         <!-- 6 -->
         <div
+          id="card-6"
           class="bg-white flex flex-col w-full p-8 rounded-lg shadow-md sm:bg-white sm:flex sm:flex-col sm:w-full sm:p-8 sm:rounded-lg sm:shadow-md"
         >
           <div class="flex justify-between items-center sm:flex sm:justify-between sm:items-center">
@@ -283,11 +364,25 @@
               class="bg-[var(--color-alert)] h-[4rem] p-4 rounded-2xl sm:bg-[var(--color-alert)] sm:h-[4rem] sm:p-4 sm:rounded-2xl"
               src="./assets/emergency.png"
               alt=""
-            /><i class="fa-regular fa-heart fa-lg" style="color: var(--text-light)"></i>
+            /><i
+              id="card-6-heart"
+              class="fa-regular fa-heart fa-lg hover:cursor-pointer"
+              style="color: var(--text-light)"
+            ></i>
           </div>
-          <p class="text-[1.5rem] font-bold my-4 sm:text-[1.5rem] sm:font-bold sm:my-4">দুদক</p>
+          <p
+            id="card-6-service-name"
+            class="text-[1.5rem] font-bold my-4 sm:text-[1.5rem] sm:font-bold sm:my-4"
+          >
+            দুদক
+          </p>
           <p class="text-[var(--text-light)]">Anti-Corruption</p>
-          <p class="text-[2rem] font-bold my-2 sm:text-[2rem] sm:font-bold sm:my-2">106</p>
+          <p
+            id="card-6-service-number"
+            class="text-[2rem] font-bold my-2 sm:text-[2rem] sm:font-bold sm:my-2"
+          >
+            106
+          </p>
           <p
             class="self-start inline-block bg-[#f5f5f5] text-[var(--text-light)] px-4 py-2 rounded-[2rem] sm:self-start sm:inline-block sm:bg-[#f5f5f5] sm:px-4 sm:py-2 sm:rounded-[2rem]"
           >
@@ -297,12 +392,14 @@
             class="flex justify-between items-center w-full mt-5 sm:flex sm:justify-between sm:items-center sm:w-full sm:mt-5"
           >
             <button
+              id="card-6-copy-button"
               class="btn btn-soft rounded-xl bg-white w-[48%] flex justify-center items-center text-[var(--text-light)] hover:bg-gray-200 hover:text-gray-800 sm:btn sm:btn-soft sm:rounded-xl sm:bg-white sm:w-[48%] sm:flex sm:justify-center sm:items-center"
             >
               <i class="fa-regular fa-copy" style="color: var(--text-light)"></i>
               <span class="text-[1.2rem] sm:text-[1.2rem]">Copy</span>
             </button>
             <button
+              id="card-6-call-button"
               class="btn btn-active btn-success rounded-xl bg-[var(--color-accent)] text-white w-[48%] hover:bg-green-700 sm:btn sm:btn-active sm:btn-success sm:rounded-xl sm:bg-[var(--color-accent)] sm:text-white sm:w-[48%] sm:hover:bg-green-700"
             >
               <i class="fa fa-phone" style="color: #ededed"></i>
@@ -312,6 +409,7 @@
         </div>
         <!-- 7 -->
         <div
+          id="card-7"
           class="bg-white flex flex-col w-full p-8 rounded-lg shadow-md sm:bg-white sm:flex sm:flex-col sm:w-full sm:p-8 sm:rounded-lg sm:shadow-md"
         >
           <div class="flex justify-between items-center sm:flex sm:justify-between sm:items-center">
@@ -319,13 +417,25 @@
               class="bg-[var(--color-alert)] h-[4rem] p-4 rounded-2xl sm:bg-[var(--color-alert)] sm:h-[4rem] sm:p-4 sm:rounded-2xl"
               src="./assets/emergency.png"
               alt=""
-            /><i class="fa-regular fa-heart fa-lg" style="color: var(--text-light)"></i>
+            /><i
+              id="card-7-heart"
+              class="fa-regular fa-heart fa-lg hover:cursor-pointer"
+              style="color: var(--text-light)"
+            ></i>
           </div>
-          <p class="text-[1.5rem] font-bold my-4 sm:text-[1.5rem] sm:font-bold sm:my-4">
+          <p
+            id="card-7-service-name"
+            class="text-[1.5rem] font-bold my-4 sm:text-[1.5rem] sm:font-bold sm:my-4"
+          >
             বিদ্যুৎ বিভ্রাট
           </p>
           <p class="text-[var(--text-light)]">Electricity Outage</p>
-          <p class="text-[2rem] font-bold my-2 sm:text-[2rem] sm:font-bold sm:my-2">16216</p>
+          <p
+            id="card-7-service-number"
+            class="text-[2rem] font-bold my-2 sm:text-[2rem] sm:font-bold sm:my-2"
+          >
+            16216
+          </p>
           <p
             class="self-start inline-block bg-[#f5f5f5] text-[var(--text-light)] px-4 py-2 rounded-[2rem] sm:self-start sm:inline-block sm:bg-[#f5f5f5] sm:px-4 sm:py-2 sm:rounded-[2rem]"
           >
@@ -335,12 +445,14 @@
             class="flex justify-between items-center w-full mt-5 sm:flex sm:justify-between sm:items-center sm:w-full sm:mt-5"
           >
             <button
+              id="card-7-copy-button"
               class="btn btn-soft rounded-xl bg-white w-[48%] flex justify-center items-center text-[var(--text-light)] hover:bg-gray-200 hover:text-gray-800 sm:btn sm:btn-soft sm:rounded-xl sm:bg-white sm:w-[48%] sm:flex sm:justify-center sm:items-center"
             >
               <i class="fa-regular fa-copy" style="color: var(--text-light)"></i>
               <span class="text-[1.2rem] sm:text-[1.2rem]">Copy</span>
             </button>
             <button
+              id="card-7-call-button"
               class="btn btn-active btn-success rounded-xl bg-[var(--color-accent)] text-white w-[48%] hover:bg-green-700 sm:btn sm:btn-active sm:btn-success sm:rounded-xl sm:bg-[var(--color-accent)] sm:text-white sm:w-[48%] sm:hover:bg-green-700"
             >
               <i class="fa fa-phone" style="color: #ededed"></i>
@@ -350,6 +462,7 @@
         </div>
         <!-- 8 -->
         <div
+          id="card-8"
           class="bg-white flex flex-col w-full p-8 rounded-lg shadow-md sm:bg-white sm:flex sm:flex-col sm:w-full sm:p-8 sm:rounded-lg sm:shadow-md"
         >
           <div class="flex justify-between items-center sm:flex sm:justify-between sm:items-center">
@@ -357,11 +470,25 @@
               class="bg-[var(--color-alert)] h-[4rem] p-4 rounded-2xl sm:bg-[var(--color-alert)] sm:h-[4rem] sm:p-4 sm:rounded-2xl"
               src="./assets/brac.png"
               alt=""
-            /><i class="fa-regular fa-heart fa-lg" style="color: var(--text-light)"></i>
+            /><i
+              id="card-8-heart"
+              class="fa-regular fa-heart fa-lg hover:cursor-pointer"
+              style="color: var(--text-light)"
+            ></i>
           </div>
-          <p class="text-[1.5rem] font-bold my-4 sm:text-[1.5rem] sm:font-bold sm:my-4">ব্র্যাক</p>
+          <p
+            id="card-8-service-name"
+            class="text-[1.5rem] font-bold my-4 sm:text-[1.5rem] sm:font-bold sm:my-4"
+          >
+            ব্র্যাক
+          </p>
           <p class="text-[var(--text-light)]">Brac</p>
-          <p class="text-[2rem] font-bold my-2 sm:text-[2rem] sm:font-bold sm:my-2">16445</p>
+          <p
+            id="card-8-service-number"
+            class="text-[2rem] font-bold my-2 sm:text-[2rem] sm:font-bold sm:my-2"
+          >
+            16445
+          </p>
           <p
             class="self-start inline-block bg-[#f5f5f5] text-[var(--text-light)] px-4 py-2 rounded-[2rem] sm:self-start sm:inline-block sm:bg-[#f5f5f5] sm:px-4 sm:py-2 sm:rounded-[2rem]"
           >
@@ -371,12 +498,14 @@
             class="flex justify-between items-center w-full mt-5 sm:flex sm:justify-between sm:items-center sm:w-full sm:mt-5"
           >
             <button
+              id="card-8-copy-button"
               class="btn btn-soft rounded-xl bg-white w-[48%] flex justify-center items-center text-[var(--text-light)] hover:bg-gray-200 hover:text-gray-800 sm:btn sm:btn-soft sm:rounded-xl sm:bg-white sm:w-[48%] sm:flex sm:justify-center sm:items-center"
             >
               <i class="fa-regular fa-copy" style="color: var(--text-light)"></i>
               <span class="text-[1.2rem] sm:text-[1.2rem]">Copy</span>
             </button>
             <button
+              id="card-8-copy-button"
               class="btn btn-active btn-success rounded-xl bg-[var(--color-accent)] text-white w-[48%] hover:bg-green-700 sm:btn sm:btn-active sm:btn-success sm:rounded-xl sm:bg-[var(--color-accent)] sm:text-white sm:w-[48%] sm:hover:bg-green-700"
             >
               <i class="fa fa-phone" style="color: #ededed"></i>
@@ -386,6 +515,7 @@
         </div>
         <!-- 9 -->
         <div
+          id="card-9"
           class="bg-white flex flex-col w-full p-8 rounded-lg shadow-md sm:bg-white sm:flex sm:flex-col sm:w-full sm:p-8 sm:rounded-lg sm:shadow-md"
         >
           <div class="flex justify-between items-center sm:flex sm:justify-between sm:items-center">
@@ -393,13 +523,25 @@
               class="bg-[var(--color-alert)] h-[4rem] p-4 rounded-2xl sm:bg-[var(--color-alert)] sm:h-[4rem] sm:p-4 sm:rounded-2xl"
               src="./assets/bangladesh-railway.png"
               alt=""
-            /><i class="fa-regular fa-heart fa-lg" style="color: var(--text-light)"></i>
+            /><i
+              id="card-9-heart"
+              class="fa-regular fa-heart fa-lg hover:cursor-pointer"
+              style="color: var(--text-light)"
+            ></i>
           </div>
-          <p class="text-[1.5rem] font-bold my-4 sm:text-[1.5rem] sm:font-bold sm:my-4">
+          <p
+            id="card-9-service-name"
+            class="text-[1.5rem] font-bold my-4 sm:text-[1.5rem] sm:font-bold sm:my-4"
+          >
             বাংলাদেশ রেলওয়ে
           </p>
           <p class="text-[var(--text-light)]">Bangladesh Railway</p>
-          <p class="text-[2rem] font-bold my-2 sm:text-[2rem] sm:font-bold sm:my-2">163</p>
+          <p
+            id="card-9-service-number"
+            class="text-[2rem] font-bold my-2 sm:text-[2rem] sm:font-bold sm:my-2"
+          >
+            163
+          </p>
           <p
             class="self-start inline-block bg-[#f5f5f5] text-[var(--text-light)] px-4 py-2 rounded-[2rem] sm:self-start sm:inline-block sm:bg-[#f5f5f5] sm:px-4 sm:py-2 sm:rounded-[2rem]"
           >
@@ -409,12 +551,14 @@
             class="flex justify-between items-center w-full mt-5 sm:flex sm:justify-between sm:items-center sm:w-full sm:mt-5"
           >
             <button
+              id="card-9-copy-button"
               class="btn btn-soft rounded-xl bg-white w-[48%] flex justify-center items-center text-[var(--text-light)] hover:bg-gray-200 hover:text-gray-800 sm:btn sm:btn-soft sm:rounded-xl sm:bg-white sm:w-[48%] sm:flex sm:justify-center sm:items-center"
             >
               <i class="fa-regular fa-copy" style="color: var(--text-light)"></i>
               <span class="text-[1.2rem] sm:text-[1.2rem]">Copy</span>
             </button>
             <button
+              id="card-9-call-button"
               class="btn btn-active btn-success rounded-xl bg-[var(--color-accent)] text-white w-[48%] hover:bg-green-700 sm:btn sm:btn-active sm:btn-success sm:rounded-xl sm:bg-[var(--color-accent)] sm:text-white sm:w-[48%] sm:hover:bg-green-700"
             >
               <i class="fa fa-phone" style="color: #ededed"></i>
@@ -438,36 +582,24 @@
           </div>
           <div class="flex justify-end items-center sm:flex sm:justify-end sm:items-center">
             <button
+              id="history-clear-button"
               class="btn btn-active btn-success rounded-[2rem] py-[1.5rem] px-[2rem] bg-[var(--color-accent)] text-white hover:bg-green-700 sm:btn sm:btn-active sm:btn-success sm:rounded-[2rem] sm:py-[1.5rem] sm:px-[2rem] sm:bg-[var(--color-accent)] sm:text-white sm:hover:bg-green-700"
             >
               <span class="text-[1rem] sm:text-[1rem]">Clear</span>
             </button>
           </div>
         </div>
-        <div>
+        <div id="history-container">
           <!-- each call -->
-          <div
+          <!-- <div
             class="bg-gray-50 p-4 flex justify-between items-center w-full mb-2 rounded-lg sm:bg-gray-50 sm:p-4 sm:flex sm:justify-between sm:items-center sm:w-full sm:mb-2 sm:rounded-lg"
           >
             <div>
               <p>জাতীয় জরুরি সেবা</p>
               <p class="text-[var(--text-light)]">999</p>
             </div>
-            <div>
-              <p>11:23:48 AM</p>
-            </div>
-          </div>
-          <div
-            class="bg-gray-50 p-4 flex justify-between items-center w-full mb-2 rounded-lg sm:bg-gray-50 sm:p-4 sm:flex sm:justify-between sm:items-center sm:w-full sm:mb-2 sm:rounded-lg"
-          >
-            <div>
-              <p>জাতীয় জরুরি সেবা</p>
-              <p class="text-[var(--text-light)]">999</p>
-            </div>
-            <div>
-              <p>11:23:48 AM</p>
-            </div>
-          </div>
+            <p>11:23:48 AM</p>
+          </div> -->
         </div>
       </section>
     </main>
