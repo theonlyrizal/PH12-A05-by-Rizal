@@ -1,15 +1,14 @@
 # PH12-A05-by-Rizal
+
 Programming Hero Batch 12 Assignment 5 submitted by Salman Bari Rizal
 
-
          https://theonlyrizal.github.io/PH12-A05-by-Rizal/
-
 
 # QnA
 
 ---
 
-> *What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?*
+> _What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?_
 
 - **getElementById** -> gets the element containing the specified Id; returns as an object.
 
@@ -21,7 +20,7 @@ Programming Hero Batch 12 Assignment 5 submitted by Salman Bari Rizal
 
 ---
 
-> *How do you create and insert a new element into the DOM?*
+> _How do you create and insert a new element into the DOM?_
 
 - **creating and element** -> `const [VARIABLE_NAME_TO_STORE_THE_ELEMENT_IN] = document.createElement('[DESIRED_ELEMENT_TAG_NAME]');`
 
@@ -29,19 +28,19 @@ Programming Hero Batch 12 Assignment 5 submitted by Salman Bari Rizal
 
 ---
 
-> *What is Event Bubbling and how does it work?*
+> _What is Event Bubbling and how does it work?_
 
 - **Event Bubbling** -> When an event happens on an element that event gradually also registered by in parents then grand parents then great-grandparents and so on up-to <html> and lastly DOCUMENT.
 
 ---
 
-> *What is Event Delegation in JavaScript? Why is it useful?*
+> _What is Event Delegation in JavaScript? Why is it useful?_
 
 - **Event Delegation** -> Instead of assigning event listeners to every child, assign it to a suitable parent. that event listener of the parent also handles events of the child elements, using the concept of Event bubbling. IT IS USEFUL because it reduces the number of event listeners, improving performance; also better code management.
 
 ---
 
-> *What is the difference between preventDefault() and stopPropagation() methods?*
+> _What is the difference between preventDefault() and stopPropagation() methods?_
 
 - **preventDefault()** -> stops the default browser action
 - **stopPropagation()** -> stops an event from bubbling up the DOM tree.
