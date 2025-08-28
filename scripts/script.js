@@ -2,7 +2,7 @@ document.getElementById('body-main').addEventListener('click', function (event) 
   const clickedElement = event.target;
   handler(clickedElement);
   function handler(clickedElement) {
-    console.log(`handler called`);
+    console.log(`DEBUG: handler called`);
     // Heart Click Mechanism
     switch (clickedElement.id) {
       case 'card-1-heart':
@@ -76,7 +76,7 @@ document.getElementById('body-main').addEventListener('click', function (event) 
         navigator.clipboard.writeText(copyServiceNumber);
         break;
       default:
-        console.log(`default`);
+        console.log(`DEBUG: default`);
         const closestButton = clickedElement.closest('button');
         if (closestButton) {
           handler(closestButton);
